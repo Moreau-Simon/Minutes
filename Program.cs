@@ -11,7 +11,9 @@ class Program
 
     static void Main()
     {
-        var result = ConvertMinutes(130);
-        Console.WriteLine($"{result.Item1}:{result.Item2}");
+        Console.Write("Entrez un nombre de minutes : ");
+        int input = int.Parse(Console.ReadLine());
+        var result = ConvertMinutes(input);
+        Console.WriteLine($"Le Résultat est {result.Item1}h : {result.Item2}min");
     }
 }
