@@ -2,11 +2,12 @@
 
 class Program
 {
+    /// Convertit un nombre de minutes en heures et minutes.
     static (int, int) ConvertMinutes(int nbMin)
     {
-        int hours = nbMin / 60;
-        int minutes = nbMin % 60;
-        return (hours, minutes);
+        int hours = nbMin / 60;    /// Calcul le nombre d'heures présentes dans le nombre de minutes.
+        int minutes = nbMin % 60;  /// Calcul le nombre de minutes restantes.
+        return (hours, minutes);   /// Tuple contenant heures et minutes.
     }
 
     static void Main()
